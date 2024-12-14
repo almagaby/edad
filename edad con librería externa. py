@@ -1,0 +1,11 @@
+from dateutil.relativedelta import relativedelta
+from datetime import date
+
+# Fecha de nacimiento
+birth_date = date(1990, 12, 15)
+# Fecha actual
+today = date.today()
+
+# Diferencia
+age = relativedelta(today, birth_date).years
+print("Edad:", age)
